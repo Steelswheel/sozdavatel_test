@@ -1,0 +1,33 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  margin-top: 2%;
+}
+
+select {
+  margin-top: 2%;
+}
+
+fieldset {
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.form {
+  text-align: center;
+}
+
+.wrapper {
+  border: 2px solid black;
+  width: 30%;
+  margin-top: 10%;
+  padding: 2%;
+}
+
+.button {
+  margin-top: 3%
+}
