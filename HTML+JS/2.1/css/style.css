@@ -1,0 +1,81 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+  background: black;
+  margin: 0 0 20px 0;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 20px;
+}
+
+.grid .col:first-child {
+  padding-left: 0;
+}
+
+.col {
+	width: 33.33%;
+}
+
+.module {
+  margin: 10px;
+  padding: 20px;
+  background: #ddd;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.grid-pad {
+  padding: 20px 20px 20px 0;
+}
+
+.grid-pad > .col:first-child {
+  padding-left: 20px;
+}
+
+body {
+  padding: 10px 50px 200px;
+}
+
+.list:hover, .tile:hover {
+	cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.col {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.col {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.col {
+		width: 33.33%;
+	}
+}
