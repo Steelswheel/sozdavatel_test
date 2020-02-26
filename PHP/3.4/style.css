@@ -1,17 +1,16 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
 .wrapper {
-  padding: 2%;
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 input {
   width: 100%;
-  margin-top: 2%;
 }
 
 select {
@@ -20,18 +19,29 @@ select {
 
 fieldset {
   text-align: left;
-  margin-bottom: 2%;
+  padding: 10%;
 }
 
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+  padding: 3%;
 }
 
 .form {
   text-align: center;
 }
 
-.button {
-  margin-top: 3%;
+.button, .label {
+  margin: 5% 0 5% 0;
 }

@@ -11,17 +11,19 @@
     <div class="wrapper">
       <div class="gallery">
         <?php for ($i = 0; $i < count($files); $i++) { ?>
-          <div><img src="<?=$dir. "/" . $files[$i]?>" alt="" /><div>
+          <div class="col"><img src="<?=$dir. "/" . $files[$i]?>" alt="" /></div>
         <?php } ?>
       </div>
 
-      <form enctype="multipart/form-data" class="form" method="post" action="redirect.php">
-        <fieldset>
-          <div><label for="inputfile">Добавить картинку:</label></div>
-          <input type="file" value="" name="inputfile" placeholder="Добавить изображение..." class="inputfile">
-        </fieldset>
-        <button type="submit" name="button" class="button">Загрузить файл</button>
-      </form>
+      <div class="download">
+        <form enctype="multipart/form-data" class="form" method="post" action="redirect.php">
+          <fieldset>
+            <div class="label"><label for="inputfile">Добавить картинку:</label></div>
+            <input type="file" value="" name="inputfile" placeholder="Добавить изображение..." class="inputfile">
+            <button type="submit" name="button" class="button">Загрузить файл</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </body>
 </html>
