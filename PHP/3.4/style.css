@@ -4,11 +4,9 @@
 }
 
 .wrapper {
-  border: 2px solid black;
-  width: 30%;
-  margin-top: 10%;
   padding: 2%;
   display: flex;
+  width: 100%;
 }
 
 input {
@@ -35,5 +33,5 @@ fieldset {
 }
 
 .button {
-  margin-top: 3%
+  margin-top: 3%;
 }
