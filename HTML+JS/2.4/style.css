@@ -1,0 +1,24 @@
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.form {
+	width: 30%;
+	margin-top: 10%;
+	border: 2px solid #a0a0a0;
+	border-radius: 10px;
+	text-align: center;
+	padding: 3%;
+}
+
+.form__phone, .form__email, .form__message {
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	margin: 5% 0 7% 0;
+	padding: 5%;
+}
+
+.form__submit, .button-undo {
+	border-radius: 20px;
+}
